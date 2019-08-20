@@ -33,7 +33,7 @@
 .header .header-manu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
 .header .header-manu a:hover {color: #666;}/* hover 마우스 댈때 */
 .header .header-tit {text-align: center;}
-.header .header-tit a {color: #fff;   font-size: 60px; padding: 5px 20px 6px 20px; margin-top: -10px; font-weight: normal; }
+.header .header-tit a {background: url(../img/123.gif) }
 
 .header .header-icon {}
 .header .header-icon
