@@ -33,7 +33,7 @@
 .header .header-manu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
 .header .header-manu a:hover {color: #666;}/* hover 마우스 댈때 */
 .header .header-tit {text-align: center;}
-.header .header-tit h1 {color: #fff;  display: inline-block; font-size: 60px; padding: 5px 20px 6px 20px; margin-top: -10px; font-weight: normal; text-transform: uppercase;}
+.header .header-tit h1 {color: #fff;   font-size: 60px; padding: 5px 20px 6px 20px; margin-top: -10px; font-weight: normal; }
 .header .header-tit a {font-size: 22px; color:#fff; padding: 5px 20px 6px 20px; margin-top: -100px; }
 .header .header-icon {}
 .header .header-icon
