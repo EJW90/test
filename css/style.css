@@ -2,43 +2,165 @@
 
 
 
-<!----- 스킵 네비 ------>
-#skip {position: relative;}
-#skip a {position: absolute; left: 0px; top: -35px; border: 1px solid #fff; color: #fff; background: #333; line-height: 30px; width: 140px; text-align: center;}
-  
-#skip a:active,
-#skip a:focus {top: 0;}
 
-/* 레이아웃 */ /* center top << 확대해도 그림이 고정됨 */
-#wrap { width: 100%;}
-#header {width: 100% ;height: 210px; background: #fff;}
-#contents {width: 100%; height: 800px; background: #222;}
-#footer {width: 100%; height: 200px; background: #333;}
+ /* 레이아웃 */
+ /* center top << 확대해도 그림이 고정됨 */
+ #wrap {
+     
+ }
 
-
-/*컨테 레이 */
-#cont_nav {width: 100%; height: 100px; background: #333}
-#cont_tit {width: 100%; height: 300px; background: #444}
-#cont_ban {width: 100%; height: 200px; background: #555}
-#cont_cont {width: 100%; height: 200px; background: #666}
+ #header {
+     
+     height: 240px;
+     background: #fff;
+ }
 
 
-/* 컨테이너 */
-.container {width: 900px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
+ #contents {
+    
+ }
+ 
+ #footer {
+    clear: both;
+     height: 100px;
+     
+ }
 
 
-/* 헤더  padding 글자 간격 display inline block 위아래 간격*/ 
-.header {}
-.header .header-manu {text-align: right;}
-.header .header-manu a {color: #333; padding: 10px 0px 10px 13px; display: inline-block;}
-.header .header-manu a:hover {color: #666;}/* hover 마우스 댈때 */
-.header .header-tit {text-align: center;}
-.header .header-tit a { }
-
-.header .header-icon {}
-.header .header-icon
+ /*컨테 레이 */
+ #cont-manu {
+     
+     height: 60px;
+     background-color: #fff; border-top:  2px solid #f1f3f6; border-bottom: 2px solid #f1f3f6;
+         
+ }
 
 
-/* 베너 */
-.ban ul {}
-.ban ul il {}
+#cont_cont {
+      background-color: #f6fdff;
+ }
+
+ #cont_ban {
+     
+     
+     background-color: #fff;
+ }
+
+ #cont_tit {
+    height: 50px;
+     background-color: #f6fdff; border-top:  2px solid #f1f3f6; border-bottom: 2px solid #f1f3f6;
+ }
+
+
+
+ /* 컨테이너 */
+ .container {
+     width: 1350px;
+     margin: 0 auto;
+     height: inherit;
+     background: rgba(255, 255, 255, 0.3);
+ }
+
+
+ /* 헤더  padding 글자 간격 display inline block 위아래 간격*/
+ .header {}
+
+ .header .header-manu {
+     text-align: right;
+ }
+
+ .header .header-manu a {
+     color: skyblue;
+     padding: 10px 0px 10px 13px;
+     display: inline-block; font-size: 14px;
+ }
+/* hover 마우스 댈때 */
+ .header .header-manu a:hover {
+     color: #666;
+ }
+
+ 
+ .header .header-tit {
+     text-align: center;
+ }
+
+ .header .header-tit a {}
+
+
+.container .container-icon {}
+.container .container-icon a{ width: 140px;height: 30px;display:inline-block; background: url(../img/gosi3.jpg);}
+.container .container-icon a.icon1 {background-position: 0 0;}
+.container .container-icon a.icon2 {background-position: -140px 0;}
+.container .container-icon a.icon3 {background-position: 0 -40px;}
+.container .container-icon a.icon4 {background-position: -140px -40px;}
+
+/*텝 메뉴*/
+.tab_manu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;background-color: #fff; }
+.tab_manu ul {overflow: hidden; border-bottom: 1px solid #ccc;}
+.tab_manu ul li {float: left; border: 1px solid #ccc;}
+.tab_manu ul li a {padding: 5px 10px; display: block;}
+.tab_manu ul li ul {position: absolute; left: 0; top 48px; width: 270px; border: 0;}
+.tab_manu ul li ul li{float: none; border: 0; background: url(../img/dot.gif) no-repeat 9px 8px; padding-left: 18px;}
+.tab_manu ul li ul li a {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; padding: 0 0 3px 0;}
+.tab_manu ul li.active {background: #2c94c4;}
+.tab_manu ul li.active a {color :#fff;}
+.tab_manu ul li.active ul li a {color: #333}
+
+
+/*margin-right, bottom > 2줄을 1줄로 겹처서 보이게 하는 방법*/
+
+ /* 베너 */
+ .ban ul {text-align: center;}
+.ban ul il {margin: 12px; } .ban ul il a {}
+
+
+/* 컨텐츠 */
+.cont {overflow: hidden; padding-top: 30px;}
+.cont .column {float: left;   margin: 0 30px 30px 0;  }/*공통*/
+
+.cont .col1 { width: 289px; height: 250px;}
+.cont .col2 {border : 1px solid #c8c8c8;  width: 690px; background-color: #fff ;height: 220px; }
+.cont .col3 {margin-right: 0; padding-right: 0; width: 270px;height: 250px; }
+.cont .col4 { width: 1010px;height: 480px; }
+.cont .col5 { width: 230px; }
+
+
+.cont .colx {font-size: 20px; }
+
+
+.cont .column .ico_tit {font-size: 20px;border-bottom: 1px solid #f1f3f6; padding-top: 5px; padding-bottom: 5px; }
+.cont .column .ico_desc{border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; }
+
+
+/*로그인 */
+#login_form {background: #f2f4f5; padding: 15px;}
+.login_header {overflow: hidden; font-size: 12px; height: 30px;}
+.login_header .lh_check {float: left; padding-right: 15px;}
+
+.login_header .lh_ip {float : left;}
+.login_header .lh_ip em {color: #0093bd; text-decoration: underline}
+.login_content {position: relative;}
+.login_content .lc_btn {position: absolute;right: 0;top: 0;width: 62px;height: 47px; background: #fff; border: 1px solid #bebebe;}
+.login_content .input_text {width: 180px;height: 16px; padding: 2px 5px; border: 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+
+
+.login_footer {margin-top: 5px;}
+.login_footer li { display: inline;}
+.login_footer li a {font-size: 12px;}
+
+
+
+/*게시판*/
+.notice2 {position: relative; margin-top: 10px;}
+.notice2 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+.notice2 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;                 font-size: 18px; border-bottom: 1px solid #f1f3f6;}
+.notice2 li span {float: right; width: 30%; text-align: right; font-size: 18px;}
+.notice2 a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+.notice2 a.more:hover {background-position: -167px -90px;}
+
+
+.t {text-align: center; margin: 10px;}
+.t a{font-size: 15px; margin: 20px;}
+
+.f {text-align: center; margin: 10px;}
+.f a{font-size: 15px; margin: 30px;}
